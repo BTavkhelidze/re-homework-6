@@ -38,7 +38,8 @@ switch (true) {
     alert('invalid age number');
 }
 
-console.log(tiketPrice + ' without any discount');
+console.log(tiketPrice + ' Gel without  discount');
+console.log('---------------------');
 if (discountTicket) {
   tiketPrice -= (tiketPrice * 25) / 100;
   console.log(`tiket price  for you is  ${tiketPrice} Gel`);
