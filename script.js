@@ -6,7 +6,7 @@ let time = prompt('enter time of day (matinee or evening)');
 
 let tiketPrice = 0;
 
-let discountTicket = false;
+let discountTicket = true;
 
 switch (true) {
   case time === 'evening' && movie === '3D':
@@ -22,7 +22,7 @@ switch (true) {
     tiketPrice = 0;
 }
 
-console.log(tiketPrice);
+// console.log(tiketPrice);
 
 switch (true) {
   case age > 0 && age < 10:
@@ -38,7 +38,7 @@ switch (true) {
     alert('invalid age number');
 }
 
-console.log(tiketPrice);
+console.log(tiketPrice + ' without any discount');
 if (discountTicket) {
   tiketPrice -= (tiketPrice * 25) / 100;
   console.log(`tiket price  for you is  ${tiketPrice} Gel`);
